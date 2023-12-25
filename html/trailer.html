@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../CSS/style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <nav class="navbar navbar-expand-md bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Movies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars" style="color: #ffffff;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="">TOP IMDB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">TV SHOW</a>
+                    </li>
+                    <!-- dropdown menu start -->
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MOVIE-TYPES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Action.html">Action</a></li> 
+                      <li><a class="dropdown-item" href="#">Adventure</a></li>
+                      <li><a class="dropdown-item" href="Comedy.html">Comedy</a></li>
+                      <li><a class="dropdown-item" href="Horror.html">Horror</a></li>
+                      <li><a class="dropdown-item" href="Romance.html">Romentic</a></li>
+                    </ul>
+                    </li>
+                    <!-- dropdown menu end -->
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="">MY LIST</a>
+                    </li>
+                    <!-- Sign In -->
+                    <li class="nav-item ">
+                        <a class="nav-link text-secondary" href="sign_in.html" target="_blank"  >SIGN IN</a>
+                    </li>
+                </ul>
+                
+                <!-- Searching bar start -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+                <!-- Searching bar end -->
+                </div>
+            </div>
+            </nav>  
+    </section> 
+    </header>
+
+   <!-- main start -->
+   <main class="container">
+   
+    <div class="row mb-2 mt-5">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h2 class="mb-3">Trailer</h2>
+            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/FgLPG38ZX7E" title="THE JESTER Official Trailer (2023) Horror Movie HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3 class="mb-1 mt-2">Storyline</h3>
+            <p class="card-text mb-auto">A malevolent being known as The Jester terrorizes the inhabitants of a small town on Halloween night, including two estranged sisters who must come together to find a way to defeat this evil entity.</p>
+          </div>
+          <!-- <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h1 class="mb-3">Cast</h1>
+            <div class="row">
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="data:image/jpeg;base64,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" alt="">
+                <p>Lelia Symington</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="data:image/jpeg;base64,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" alt="">
+                <p >Matt Servitto</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="data:image/jpeg;base64,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" alt="">
+                <p>Lelia Symington</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSU4W5ArHuVgKuG-s2q-7niTZ6VwtBOcPMwI8R4-5NyyM1JTIvZhNlwEnazaMRRWqpfYjj7R_co&s=19" alt="">
+                <p>Lelia Symington</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOiSKdnFY313j1ttS5ggTktEOsbiKpXBoxwpns3dM&s=10" alt="">
+                <p>Cory Okouchi</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBMSyNpXxIcc-oul2kWAYcC2DYMHEf63IRdreV9WKxb_MlVhKVYVEQld4&s=10" alt="">
+                <p>Brie Larson</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-auto"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkV43xgUCu-kkmRHj0ff3bPu2b5rvSTqiUFkcMx1dImxYDJNyMAG8uH_19&s=10" alt="">
+                <p class="mx-2">Paul Rudd</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-auto"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp01XH5zqRCmluS-wSUwkOWg_lMwteuKWyzkBbDsw9_aF13Sru7AoF6mY&s=10" alt="">
+                <p>Tom Holland</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-auto"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoYO3T2ob0Ciu8YKqnOH2LkbLTUnssftCtGPjxrwMotmgCj4VtopdcqDo&s=10" alt="">
+                <p class="mx-2">Chadwick</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymZYcSzo6PGDDb8GRZmZ-PVgAPF-LW47WNGhf1ENgQDpJ2MWAtjOinJ0&s=10" alt="">
+                <p>Don Cheadle</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-2"  width="90" height="90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLyoyAVDvRQ6KeH88wlmIwXT6LgqmFloqIpTH3K4tOx_UmA_WMHY3PsW4&s=10" alt="">
+                <p class="">Chris Hemsworth</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-3">
+                <img class="bd-placeholder-img rounded-circle mx-auto"  width="90" height="90" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAADAAMBAQAAAAAAAAAAAAAEBQYCAwcBAP/EADsQAAIBAwIDBAcGBAcBAAAAAAECAwAEEQUhBhIxEyJBURQyM2FxkfAjUoGhscEHQkPRFSRicpKy8TT/xAAaAQADAQEBAQAAAAAAAAAAAAADBAUGAgAB/8QAKREAAgICAgECBAcAAAAAAAAAAQIAAwQRITESBTITIkFRFEJDYXGx0f/aAAwDAQACEQMRAD8AkJYnPnQU9vJinwQMaxkgGOlW5G8tSdhDJJvVJw9FJqOoJY2+DIQXc+EaDqx+Y28yPjSbU8W0Jkx3icL8aN4A17TdEn1K51aSUGWFUiEcZYtuS2/h0XrQLLjXwvc7TFW87fqWxttFSCPtFkv+0DcgJIWQ93AC5AIPMuM5GDnOKGWy4fPaJPoFojw8wmMUaryEH7wxgYw2W5Rgj34nrr+JkET8uk6JbRhUVElnPM3KBgAgY8P9RryH+J9/If8AMaTp1wg/lXmUj55/SkWNjckyvWuNUPGtNCU1xoafaLod05kjH/zXDM6NgkYVzv12zlhnypBYarbXrGPJiuFJVoZNmBHUU30nj3h24lt5LyKbTXgQxqojLx8pIJA5AfFR1A/OuY3Fw0l7NcoxDPM0obocliaPTkOncm5npuNfyo0fv/s6FL0pNqHjTKxulvrCK4HV17w8m6EfOlupeNVNgpsTNUKUsKt2JM3h+0NCmirv2hoWkj3NFX7ZeWaHGWrdKoxWUZCitc8m1HixPMm+JWAECeBLMfwx/epeeYyNgbKOgp9xZL3oFB3Ib9qH4c0mS7l9KeykuoIm9ko2c+8+Xuqfe2mJMqYqkoAIJpuh6pqi8+n2E8yffC4X/kdq2X/D+taVH295p1xDGOsgHMo+JGQK7Dw1rXp2LaeyFrImyx4wMDyrTxHqupxyi00qGNzj7RiM4FJ/HbetR/8ADrqcfimE697Zx4+deluQ4YbedNte0CWBWv7drU470sNu3qe8DGwpMsqsmHBU/CmFIYcRZ1KnmVnBtxz211b/AHHDj8Rg/p+dGamuxpVwSQby4wcgw/owp3qa4U1UxzuqZfMATNOvrqSF37Q0IaLvPamhDQT3K9ftnRVTIoW7QgHFNFjwtCXeMGixQHmSWqafeXNzZvFbyOjs0aty7Ftts9KuNM4YaKzghluJeVBl1hflDMdzv161osYf8gLuOWTET8ssee6d9j7j36pbG6QRgsc5FRsqwmwiaTDqAqB72JotoLayuIIIkYYBbLOWPTzNeWhinubiGWNW5mzuOlAaxqs1nqMU1vDDJgeo7YY/D5jrS3S9auH1f0i7SC0jLECPmJY5z4jbriluTzG+AdSkbQNPWTtRaW6udyyRAFvPJqL1bg2yt5ppLeZlikzyxN/T+B8auv8AF4niK4BJ9VgdjUrrN00wfIPIu9dI7A8GDsrUryIq4Z0xdNYyfa3EtyTGkUIHcVWwZGJ8M42ovVjy8ynqDg064Ztre20ee4S4dpZJWwpGwI6Y92Sfzqe1mftbiVx0dyw/E1VwbHbyB6me9XxqlNbqPmMl7v2rUKetE3PtDQx60U9z7X7Z0/tlC0q1C4AzWUjNjalN+zHOTR9RZV5hmn6k8NrfwqR9rFkA+JXfFHx6m3oAa2BMp2H96n7Mcxwa8trmSyvPRJDsHGCfFcipubR+oJV9OyxzSfpG2mxve30i6iWtGQjmkmieTm+AUEY9+RTC/wBOtQjNaag88uM4bTJFXO/ixGPCmF1OY3M9sElL+rHzYbPw+dYTX91JgXEaxID3nfvY2zn5UiCJX1+8T6RDqFmYbi+MccUjsoiHXZfH68KV6nqDlmHN3cldqZ8S6pDiOC3bnWEkmQjbPQ/XuqOedprgKTkFs10qbO4GxwBoS+sbmUaNDAI1TK7sDkkb/KkmoA8xp7GnJaxL91APypRqYwCavU1LXXpRMVZmWZOQS564H8SWufaGtFbrj2hrTQTLCdS0M4xS+7YPmvhKCOtaZZBTJ6gdTO0HKwrziSF2it7mNcmMkMflj96ysleVwkSs7noqjJNE6Ldf4tLcQyRD0THIp+8fH9qXyrFWkgz2HS75YYdDf9QEamptlaJ+Vhgk53BGPr8a+uNaa6iCSTEDc9ep+sVsk4QupbwwwvHjqrO2Mj315c8C6pCuVWGQ+SyY/WpG0mh8XijVb9ZAIotx/Mc/XvovhnSJL6f0mZWFtH/N98+QpzonAFzI4uNWZI7cf0kbLN+PhTjiPULTQrFIIFRZSuIYV8PefIV4v+VZ5a9fM/U1W+oW9y8kEZIkiJUhsb4ODil2qt3TQfCOnyXBm1SftRBGeyhCetc3D7Ki+fXJPh88M+IbGe07TnHNGsjRdqm6My9QD5irNN4ZfEnmZTIwDTd5oPlMjp/XNaq2zeuawCk0OUF6hKXD5wMk0zisWWLtr9jBGV5gD6xHnjrj5fGmENvDpPD1vqNtGrXc747SQc3Z/wC0dM/HNJbySRkdpJGdmPMxY5LHzPnSWTntvxTiaHB9GSxfiWnj7SosDDFwvdvZIyTTR3as3VyqRern4tnb7opJwdIvYuikc6zc5HuKgftWWkX01vd6XGvK0c90pdGGx5sxN81Y594HlS7SohY8Wy28Bbs4bqSFQT1UOVwfPalg/mhJ7n2zFNN4Vep0eRO7DOoOxwceFMIpTJhSeb419ZxK0cqEZAO1EpGoZBv6wFAncVcYasdK01YreRUu5wRESuQgHVsfW5rmMFnPqV+0uq3BSEENPcE8zFfJR1Zj0AxVh/ETvaxCucCO25lx583/AJUr2jRerg5x1GeorpbSh4jSYK31BidGVF3rAsI40soBDcLH2dtDGwI0+E9SW3BmfxO+P+yOTUfSYsXZUQBezhVGOY1zvgdevUnc9TmgtRmfkijBAVhk4GKFHdbbwrg2k8xuvAqrHj3PLlOxlJ9rE2yt0Offj6NaxLHESkuQwPhvRluxkR429XOMfgT+RH5mk02e0O5+dPY97MJn/UMJKX46M//Z" alt="">
+                <p>Chris Evans</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row g-5">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+          
+         <a href="https://hdtoday.tv/watch-movie/watch-the-jester-hd-101080.9961519" target="_blank" style="text-decoration: none;" >
+          <button class="btn btn-warning" type="button">PLAY <i class="fa-solid fa-play"></i></button>  
+         </a>
+         <p style="text-decoration: none; display: inline;" class="mx-3 text-dark fs-5 fw-normal">Duration: 120m </p>
+        </h3>
+  
+        <article class="blog-post">
+          <h2 class="display-5 link-body-emphasis mb-1">Clever Story and Great Character!</h2>
+          <p class="blog-post-meta">January 1, 2021 by <a href="#">Colin Krawchuk</a></p>
+  
+          <p>I have been a fan of The Jester short films since the first one appeared on YouTube in 2016. The Jester himself has always been mysterious which allows the viewer to untangle the character in their own way.
+
+            Now, seven years later, that character gets his own full length film written by the original creators of the YouTube shorts. I was lucky enough to be one of the first people to see the movie on the big screen, and I am extremely grateful for that opportunity.
+            </p>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-body-tertiary rounded">
+            <h4 class="fst-italic">About</h4>
+            <p class="mb-0">A malevolent being known as The Jester terrorizes the inhabitants of a small town on Halloween night, including two estranged sisters who must come together to find a way to defeat this evil entity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-body-tertiary rounded">
+           
+            <div class="container-fluid mt-3">
+              <div class="comments-area">
+                <div id="comments">
+                  <h3 id="reply-title" class="comment-reply-title">Leave a Comment</h3>
+                  <form id="comment-form" class="mb-5">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name:</label>
+                      <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="comment" class="form-label">Comment:</label>
+                      <textarea class="form-control" id="comment" rows="4" placeholder="Write a comment..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post Comment</button>
+                  </form>
+                 
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-5">
+        <div class="position-sticky mt-3" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-body-tertiary rounded">
+            <h4 class="fst-italic">Commment Section</h4>
+            <ul id="comment-list" class="comment-list"></ul>
+             </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </main>
+   <!-- main end -->
+
+   <footer class="container border-top mt-5">
+    <div class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Get in touch</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">moviestreaming@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">moviestream.io</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3 mx-5">
+          <h5>Connect</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png" width="30px" alt=""> Facebook </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" width="30px" alt=""> Instagram</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+    <script src="../javaScript/script.js"></script>
+    <script src="https://kit.fontawesome.com/ecdef9102d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

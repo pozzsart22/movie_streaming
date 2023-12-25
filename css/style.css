@@ -1,0 +1,72 @@
+/* position */
+.position_view_bn{
+    position: absolute;
+    top: 400px;
+    left: 176px;
+}
+.carousel_size{
+    height: 500px;
+}
+
+/* format */
+
+
+/* Size */
+.section1, .section2{
+    display: inline-block;
+    width: 45%;
+   
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card{
+    transition: transform.5s;
+}
+
+/* Resposive */
+@media(max-width:790px){
+    .position_view_bn{
+        position: absolute;
+        top: 125px;
+        left: 24px;
+    }
+    .indicator{
+        position: absolute;
+        top:160px;
+        left: 5px;
+    }
+    .carousel_size{
+        height: 200px;
+    }
+    .section1{
+        display: block;
+        width: 0%;
+        
+    }
+    .section2{
+        display: block;
+    }
+
+
+
+    .comment-list {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      .comment-item {
+        margin-bottom: 20px;
+      }
+  
+      .comment-author {
+        font-weight: bold;
+      }
+  
+      .comment-date {
+        font-size: 0.8em;
+        color: gray;
+      }
+  
+    
+}
